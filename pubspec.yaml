@@ -23,28 +23,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  
+  #Assets(Fonts and icons)
   cupertino_icons: ^0.1.3
+  google_fonts: ^1.1.0
+
+  #Responsiveness & scalability
+  responsive_builder: ^0.2.0+2
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  device_preview: ^0.4.5
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/
     - assets/svgs/
-  fonts:
-    - family: Muli
-      fonts:
-        - asset: assets/fonts/Muli/Muli-Regular.ttf
-        - asset: assets/fonts/Muli/Muli-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Muli/Muli-ExtraBold.ttf
-          weight: 800
+    - assets/fonts/google_fonts/
