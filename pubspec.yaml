@@ -43,4 +43,5 @@ flutter:
   assets:
     - assets/images/
     - assets/svgs/
+    - assets/svgs/bottom_nav_bar/
     - assets/fonts/google_fonts/
