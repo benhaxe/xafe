@@ -10,6 +10,15 @@ class XMargin extends StatelessWidget {
   }
 }
 
+class XMarginScale extends StatelessWidget {
+  final double _x;
+  const XMarginScale(this._x);
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(width: context.width * _x);
+  }
+}
+
 class YMargin extends StatelessWidget {
   final double _y;
   const YMargin(this._y);
@@ -17,6 +26,17 @@ class YMargin extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: context.scaleY(_y),
+    );
+  }
+}
+
+class YMarginScale extends StatelessWidget {
+  final double _y;
+  const YMarginScale(this._y);
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: context.height * _y,
     );
   }
 }

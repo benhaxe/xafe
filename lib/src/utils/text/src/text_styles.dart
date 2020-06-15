@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:xafe/src/res/values/values.dart';
+import 'package:xafe/src/res/z_res.dart';
 
 import 'package:xafe/src/utils/scaler/scaler.dart';
 
@@ -26,8 +27,9 @@ TextStyle textStyleBold(BuildContext context) => GoogleFonts.muli(
 ///Text styling for [regular] texts.
 TextStyle textStyleRegular(BuildContext context) => GoogleFonts.muli(
       textStyle: TextStyle(
-        fontSize: context.fontSize(kRegularFontSize),
+        fontSize: context.fontSize(kBoldFontSize),
         fontWeight: FontWeight.w400,
+        color: kColorWhite,
         height: 1.4,
       ),
     );

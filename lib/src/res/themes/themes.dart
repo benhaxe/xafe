@@ -7,10 +7,10 @@ export 'colors.dart';
 
 ThemeData xafeTheme(BuildContext context) => ThemeData(
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      canvasColor: colorWhite,
+      canvasColor: kColorWhite,
       primarySwatch: Colors.blue,
-      primaryColor: colorLightBlue,
-      backgroundColor: colorGray, // status bar color
+      primaryColor: kColorLightBlue,
+      backgroundColor: kColorGray, // status bar color
       brightness: Brightness.light,
       textTheme: GoogleFonts.muliTextTheme(
         Theme.of(context).textTheme,

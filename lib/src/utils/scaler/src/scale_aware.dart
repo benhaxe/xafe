@@ -22,11 +22,13 @@ class ScaleAware extends InheritedWidget {
     }
     throw FlutterError.fromParts(<DiagnosticsNode>[
       ErrorSummary(
-          'ScaleAware.of() called with a context that does not contain a ScaleAware.'),
+        'ScaleAware.of() called with a context that does not contain a ScaleAware.',
+      ),
       ErrorDescription(
-          'No ScaleAware ancestor could be found starting from the context that was passed '
-          'to ScaleAware.of(). This can happen because you do not have a ScaleAware widget '
-          'or it can happen if the context you use comes from a widget above it.'),
+        'No ScaleAware ancestor could be found starting from the context that was passed '
+        'to ScaleAware.of(). This can happen because you do not have a ScaleAware widget '
+        'or it can happen if the context you use comes from a widget above it.',
+      ),
       context.describeElement('The context used was')
     ]);
   }
