@@ -1,18 +1,19 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xafe/res/themes.dart';
 import 'package:xafe/xafe.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    Xafe(),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Xafe',
-      theme: xafeTheme(),
-      home: Xafe(),
-    );
-  }
-}
+/* void main() {
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (_) => Xafe(),
+    ),
+  );
+} */
