@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:xafe/app/home/home.dart';
 import 'package:xafe/src/utils/scaler/scaler.dart';
 
 import 'app/onboard/onboard.dart';
@@ -18,7 +19,7 @@ class Xafe extends StatelessWidget {
         builder: DevicePreview.appBuilder, */
         debugShowCheckedModeBanner: false,
         theme: xafeTheme(context),
-        home: OnboardScreen(),
+        home: HomeScreen(),
       ),
     );
   }

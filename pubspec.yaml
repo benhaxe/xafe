@@ -26,6 +26,7 @@ dependencies:
   
   #Assets(Fonts and icons)
   cupertino_icons: ^0.1.3
+  flutter_svg: ^0.18.0
   google_fonts: ^1.1.0
 
   #Responsiveness & scalability

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:xafe/src/res/z_res.dart';
+import 'package:xafe/src/res/res.dart';
 import 'package:xafe/src/utils/scaler/scaler.dart' show BuildContextExtensions;
 
 class XafeSecondaryButton extends StatelessWidget {
@@ -39,7 +39,7 @@ class XafeSecondaryButton extends StatelessWidget {
           _text,
           style: GoogleFonts.muli(
               textStyle: TextStyle(
-            fontSize: context.fontSize(kBoldFontSize),
+            fontSize: context.fontSize(kDimen16),
             letterSpacing: .8,
             fontWeight: FontWeight.w700,
             color: kColorDeepBlue,

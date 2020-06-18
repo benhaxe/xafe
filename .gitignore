@@ -84,3 +84,9 @@ ios/Runner.xcworkspace/contents.xcworkspacedata
 ios/Runner.xcodeproj/project.pbxproj
 ios/Flutter/Debug.xcconfig
 ios/Podfile
+pubspec.lock
+android/.project
+android/app/.settings/org.eclipse.buildship.core.prefs
+android/app/.project
+android/.settings/org.eclipse.buildship.core.prefs
+android/app/.classpath

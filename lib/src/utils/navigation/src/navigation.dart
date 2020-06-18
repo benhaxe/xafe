@@ -23,6 +23,14 @@ navigate(BuildContext context, Widget route, {isDialog = false}) =>
 popToFirst(BuildContext context) =>
     Navigator.of(context).popUntil((route) => route.isFirst);
 
+pushAndRemoveUntil(BuildContext context, Widget newRoute) =>
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(
+        builder: (context) => newRoute,
+      ),
+      (route) => false,
+    );
+
 popView(BuildContext context) => Navigator.pop(context);
 
 navigateTransparentRoute(BuildContext context, Widget route) {
