@@ -31,8 +31,10 @@ class _XafeBottomNavBarState extends State<XafeBottomNavBar> {
       currentIndex: _selectedIndex,
       type: BottomNavigationBarType.fixed,
       showUnselectedLabels: true,
+      selectedLabelStyle:
+          textStyleRegular(context).copyWith(color: kColorPurple),
       unselectedLabelStyle:
-          textStyleRegular(context).copyWith(color: kColorLightBlue),
+          textStyleRegular(context).copyWith(color: kColorPurple),
       items: [
         BottomNavigationBarItem(
           activeIcon: SvgPicture.asset(
@@ -41,7 +43,7 @@ class _XafeBottomNavBarState extends State<XafeBottomNavBar> {
           ),
           icon: SvgPicture.asset(
             kSvgHomeOutlined,
-            color: kColorLightBlue,
+            color: kColorPurple,
           ),
           title: Text(
             'Home',
@@ -57,7 +59,7 @@ class _XafeBottomNavBarState extends State<XafeBottomNavBar> {
           icon: SvgPicture.asset(
             kSvgStatsOutlined,
             height: 24,
-            color: kColorLightBlue,
+            color: kColorPurple,
           ),
           title: Text(
             'Stats',
@@ -71,7 +73,7 @@ class _XafeBottomNavBarState extends State<XafeBottomNavBar> {
           ),
           icon: SvgPicture.asset(
             kSvgSettingsOutlined,
-            color: kColorLightBlue,
+            color: kColorPurple,
           ),
           title: Text(
             'Settings',
@@ -85,7 +87,7 @@ class _XafeBottomNavBarState extends State<XafeBottomNavBar> {
           ),
           icon: SvgPicture.asset(
             kSvgInvestOutlined,
-            color: kColorLightBlue,
+            color: kColorPurple,
           ),
           title: Text(
             'Invest',
