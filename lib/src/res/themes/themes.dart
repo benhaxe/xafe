@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:xafe/src/res/values/styles/form_style.dart';
 
 import '../res.dart';
 
@@ -21,10 +22,12 @@ ThemeData xafeTheme(BuildContext context) => ThemeData(
           900: kColorDeepBlue,
         },
       ),
-
       primaryColor: kColorLightBlue,
-      backgroundColor: kColorGray, // status bar color
+      backgroundColor: kColorGray,
+      scaffoldBackgroundColor: kColorGray,
       brightness: Brightness.light,
+      inputDecorationTheme: xafeFormTheme,
+      cursorColor: kColorPurple,
       textTheme: GoogleFonts.muliTextTheme(
         Theme.of(context).textTheme,
       ),
