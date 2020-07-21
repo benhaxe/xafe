@@ -11,11 +11,11 @@ class XafeButton extends StatelessWidget {
   final bool _isLoading;
 
   ///
-  const XafeButton({
+  const XafeButton(
+    String text, {
     Key key,
-    VoidCallback onPressed,
+    @required VoidCallback onPressed,
     Color backGroundColor,
-    String text,
     double buttonWidth,
     bottomMargin,
     bool isLoading,
@@ -30,7 +30,9 @@ class XafeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: _buttonWidth ?? context.width,
-      margin: context.insetsOnly(bottom: _bottomMargin),
+      margin: context.insetsOnly(bottom: _bottomMargin).add(
+            context.insetsSymetric(horizontal: 32.0),
+          ),
       decoration: BoxDecoration(
         color: kColorDeepBlue,
         borderRadius: BorderRadius.circular(8),
@@ -44,9 +46,10 @@ class XafeButton extends StatelessWidget {
       ),
       child: MaterialButton(
         padding: context.insetsSymetric(
-          vertical: 20,
-          horizontal: 16,
+          vertical: 16,
+          horizontal: 12,
         ),
+        elevation: 4.0,
         color: kColorDeepBlue,
         child: _isLoading == true
             ? SizedBox(
@@ -61,7 +64,7 @@ class XafeButton extends StatelessWidget {
                 _text,
                 style: GoogleFonts.muli(
                     textStyle: TextStyle(
-                  fontSize: context.fontSize(kDimen16),
+                  fontSize: context.fontSize(kDimen20),
                   letterSpacing: .8,
                   fontWeight: FontWeight.w700,
                   color: kColorWhite,
